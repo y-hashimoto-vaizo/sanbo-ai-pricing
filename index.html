@@ -201,6 +201,18 @@
   .boundary-rule { text-align: center; margin-top: 12px; font-size: 13px; font-weight: 700; color: #1565c0; background: #e3f2fd; padding: 10px; border-radius: 6px; }
 
   .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #ddd; font-size: 12px; color: #999; text-align: center; }
+
+  /* 反論セクション */
+  .objection { background: #fff; border-radius: 12px; margin-bottom: 20px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+  .objection-q { background: #ffebee; padding: 16px 20px; display: flex; align-items: flex-start; gap: 12px; }
+  .objection-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+  .objection-text { font-size: 14px; font-weight: 700; color: #c62828; }
+  .objection-sub { font-size: 12px; color: #888; margin-top: 4px; font-weight: 400; }
+  .objection-a { padding: 16px 20px; }
+  .objection-a-label { font-size: 11px; font-weight: 700; color: #2e7d32; margin-bottom: 8px; letter-spacing: 1px; }
+  .objection-a-text { font-size: 13px; color: #444; line-height: 1.9; }
+  .objection-a-text strong { color: #1a1a1a; }
+  .objection-a-text .key { background: #e8f5e9; padding: 2px 6px; border-radius: 3px; font-weight: 600; color: #2e7d32; }
 </style>
 </head>
 <body>
@@ -279,6 +291,211 @@
 
     <p style="text-align:center; margin-top:24px; font-size:14px; font-weight:600; color:#ffab40;">ChatGPTは「賢いツール」。SANBO AIは「組織を変える仕組み」。</p>
     <p style="text-align:center; margin-top:6px; font-size:12px; color:#888;">※ 利用ログの可視化は社員の同意のもとで運用します。匿名集計レポートも選択可能です。</p>
+  </div>
+
+  <!-- 完膚なきツッコミと反論 -->
+  <h2>「それ、ChatGPTでよくない？」全ツッコミへの回答</h2>
+  <p class="section-lead">想定されるあらゆる反論に、根拠を持って答えます。</p>
+
+  <div class="objection">
+    <div class="objection-q">
+      <div class="objection-icon">🔥</div>
+      <div>
+        <div class="objection-text">「ChatGPT TeamやProプランで十分じゃん。月$25だよ？月5万円は高すぎる。」</div>
+        <div class="objection-sub">社員10人に配っても月$250（約37,500円）。参謀AIの月5万より安い。</div>
+      </div>
+    </div>
+    <div class="objection-a">
+      <div class="objection-a-label">SANBO AIの回答</div>
+      <div class="objection-a-text">
+        ChatGPT Teamを10人に配ると、<strong>10人が10個のバラバラの文脈</strong>でAIに話しかけます。Aさんが聞いた内容をBさんのAIは知りません。<br>
+        SANBO AIは<span class="key">全社員が同一コンテクストでAIを利用</span>します。会社の戦略・方針・過去の判断・社内用語を全員のAIが共有した状態。誰が聞いても同じ前提で、一貫性のある回答が返る。<br><br>
+        さらに、ChatGPTは「1人1つのAI」ですが、SANBO AIは<span class="key">1社に対して複数のAI社員を同時稼働</span>させます。採用AI・参謀AI・広報AIが同時に動き、それぞれが同じ会社の文脈を共有している。ChatGPT Teamでは、この「AI同士が連携する」設計は実現できません。
+      </div>
+    </div>
+  </div>
+
+  <div class="objection">
+    <div class="objection-q">
+      <div class="objection-icon">🔥</div>
+      <div>
+        <div class="objection-text">「Claude MaxやOpus課金でいいじゃん。最強モデルが月$200で使い放題だよ？」</div>
+        <div class="objection-sub">個人で最強モデルを使えば、同じことができるのでは。</div>
+      </div>
+    </div>
+    <div class="objection-a">
+      <div class="objection-a-label">SANBO AIの回答</div>
+      <div class="objection-a-text">
+        Claude Maxは「1人の天才」を雇うようなもの。その天才は<strong>あなたにしか話しかけられません</strong>。<br>
+        SANBO AIは「会社の全員が使える、会社を知っている天才を何人でも」です。部長が聞いても、課長が聞いても、同じ会社の文脈を踏まえた回答が返る。<br><br>
+        しかも、<span class="key">複数のAI社員を同時に立ち上げて、それぞれに専門領域を持たせる</span>ことが可能です。採用専門のAI、経営戦略専門のAI、広報専門のAI——これらが同時に稼働し、しかも全員が同じ会社の文脈を共有している。Claude Maxの1アカウントでは、この「チームとしてのAI」は実現できません。
+      </div>
+    </div>
+  </div>
+
+  <div class="objection">
+    <div class="objection-q">
+      <div class="objection-icon">🔥</div>
+      <div>
+        <div class="objection-text">「ChatGPT EnterpriseのProjects機能でコンテクスト共有できるって聞いたけど？」</div>
+        <div class="objection-sub">ファイルをアップロードすれば、チーム全体でAIが共有できるはず。</div>
+      </div>
+    </div>
+    <div class="objection-a">
+      <div class="objection-a-label">SANBO AIの回答</div>
+      <div class="objection-a-text">
+        ChatGPT EnterpriseのProjects機能は<strong>「ファイル共有」のレベル</strong>です。PDFやドキュメントをアップロードすれば、それをもとにAIが回答する。<br>
+        SANBO AIの共有コンテクストは、ファイルだけではありません。<span class="key">「なぜこの判断をしたか」「今の組織の課題は何か」「この言葉はうちでは何を意味するか」</span>といった<strong>暗黙知・経営判断の背景・社内の文化</strong>までAIが理解している。ファイルをアップロードするだけでは、この深さの文脈は構築できません。<br><br>
+        加えて、ChatGPT Enterpriseは<strong>1ユーザーあたり月$60</strong>。30人で月$1,800（約27万円）。SANBO AIのスタータープランなら<span class="key">月5万円で100人がログイン可能</span>です。
+      </div>
+    </div>
+  </div>
+
+  <div class="objection">
+    <div class="objection-q">
+      <div class="objection-icon">🔥</div>
+      <div>
+        <div class="objection-text">「Microsoft Copilotがうちの会社に入ってるんだけど。Officeと連携もしてるし。」</div>
+        <div class="objection-sub">Excel、Word、Teams連携があるCopilotで十分では。</div>
+      </div>
+    </div>
+    <div class="objection-a">
+      <div class="objection-a-label">SANBO AIの回答</div>
+      <div class="objection-a-text">
+        Copilotは「既存のOffice作業を高速化するツール」。Excelの関数提案、Wordの下書き、Teamsの要約は確かに便利です。<br>
+        しかし、Copilotは<strong>「今月、御社はこれに取り組むべきです」とは言ってくれません</strong>。あくまで「聞かれたら答える」受動型のツールです。<br><br>
+        SANBO AIは<span class="key">提案型</span>です。AIが会社の状況を読み取り、「この業務をAI化すべき」「組織フェーズが次の段階に進んでいる」と能動的に提案してくる。さらに、Copilotでは<span class="key">「誰がどこでつまずいているか」を管理者が把握する機能はありません</span>。SANBO AIの管理者ダッシュボードは、組織のAI活用状況を可視化し、課題を発見するツールとしても機能します。
+      </div>
+    </div>
+  </div>
+
+  <div class="objection">
+    <div class="objection-q">
+      <div class="objection-icon">🔥</div>
+      <div>
+        <div class="objection-text">「Claude Codeを自分で入れればタダでしょ？エンジニアがAPIキー取ればいいだけ。」</div>
+        <div class="objection-sub">技術的にはオープンソース。自前で構築すれば費用はAPI代だけ。</div>
+      </div>
+    </div>
+    <div class="objection-a">
+      <div class="objection-a-label">SANBO AIの回答</div>
+      <div class="objection-a-text">
+        正しいです。技術的には可能です。<strong>エンジニアが社内にいれば。</strong><br>
+        SANBO AIのターゲットは「AIエンジニアを雇えない中小企業」です。Claude Codeを自前で入れる場合、以下が必要になります：<br>
+        ・環境構築・MCP接続設定ができるエンジニア<br>
+        ・全社員分のコンテクスト設計と保守<br>
+        ・複数のAI社員の同時稼働の設計と運用<br>
+        ・利用状況の可視化ダッシュボードの開発<br>
+        ・障害対応・アップデート対応<br><br>
+        これを自前でやるなら、<strong>AIエンジニア1人の年収600〜800万円</strong>が必要です。SANBO AIのスタータープランは<span class="key">年間60万円</span>。エンジニアの1/10以下のコストで、上記すべてが込み。<br>
+        しかも、自前構築では<span class="key">「同一コンテクストの複数AI社員の同時稼働」と「管理者ダッシュボード」</span>を実現するのは相当な開発工数がかかります。
+      </div>
+    </div>
+  </div>
+
+  <div class="objection">
+    <div class="objection-q">
+      <div class="objection-icon">🔥</div>
+      <div>
+        <div class="objection-text">「AI社員って言ってるけど、結局ただのチャットボットでしょ？名前を変えただけでは？」</div>
+        <div class="objection-sub">「AI社員」はマーケティング用語で、実態はChatGPTと同じでは。</div>
+      </div>
+    </div>
+    <div class="objection-a">
+      <div class="objection-a-label">SANBO AIの回答</div>
+      <div class="objection-a-text">
+        チャットボットとの決定的な違いは3つです。<br><br>
+        <strong>1. 複数のAI社員が同時に稼働する。</strong><br>
+        採用AI・参謀AI・広報AIが同時に動き、<span class="key">それぞれが専門知識を持ちながら、全員が同じ会社の文脈を共有</span>しています。チャットボットは1つ。AI社員は何人でも増やせます。<br><br>
+        <strong>2. 社員全員が同じAI社員にアクセスする。</strong><br>
+        社長が参謀AIに相談した内容を、部長が翌日参謀AIに聞くと、<span class="key">前日の社長との会話の文脈を踏まえて回答</span>します。チャットボットは「個人×AI」の1対1。SANBO AIは「組織×AI」の多対多。<br><br>
+        <strong>3. 仕組みを作り、実行する。</strong><br>
+        チャットボットはテキストを返すだけ。SANBO AIのAI社員は、Google Driveにファイルを作り、データを分析し、レポートを保存し、業務を自動化する仕組みを構築します。
+      </div>
+    </div>
+  </div>
+
+  <div class="objection">
+    <div class="objection-q">
+      <div class="objection-icon">🔥</div>
+      <div>
+        <div class="objection-text">「Notion AIやGoogle Gemini for Workspaceでも社内ナレッジを共有したAIが使えるよ？」</div>
+        <div class="objection-sub">ナレッジ共有×AIの組み合わせは他にもある。</div>
+      </div>
+    </div>
+    <div class="objection-a">
+      <div class="objection-a-label">SANBO AIの回答</div>
+      <div class="objection-a-text">
+        Notion AIやGeminiは「ドキュメントを検索して答えるAI」です。書いてあることは答えられる。<br>
+        しかし、<strong>「書いていないこと」——つまり経営者の頭の中にある判断基準、組織の暗黙のルール、「なぜこうしたか」の文脈は答えられません。</strong><br><br>
+        SANBO AIは、ヒアリングを通じてこれらの暗黙知をコンテクストとして構築し、<span class="key">全社員のAI利用に反映</span>させます。<br>
+        さらに、Notion AIもGeminiも<span class="key">「誰がどこでつまずいているか」の管理者可視化機能を持っていません</span>。「使いこなせない」問題を放置したまま、ツールだけ導入しても3ヶ月で誰も使わなくなるのは、AI導入企業の85%が証明しています。
+      </div>
+    </div>
+  </div>
+
+  <div class="objection">
+    <div class="objection-q">
+      <div class="objection-icon">🔥</div>
+      <div>
+        <div class="objection-text">「API原価25,000円で5万円取ってるの？粗利50%はぼったくりでは？」</div>
+        <div class="objection-sub">APIを直接叩けば半額で済むのでは。</div>
+      </div>
+    </div>
+    <div class="objection-a">
+      <div class="objection-a-label">SANBO AIの回答</div>
+      <div class="objection-a-text">
+        月5万円に含まれるのはAPI代だけではありません。<br><br>
+        ・<strong>コンテクスト設計・保守</strong>（御社の戦略・方針・判断基準をAIに反映し、更新し続ける）<br>
+        ・<strong>複数AI社員の同時稼働基盤</strong>（採用AI・参謀AI・広報AIを同時に動かすインフラ）<br>
+        ・<strong>管理者ダッシュボード</strong>（誰がどう使っているか、どこでつまずいているかの可視化）<br>
+        ・<strong>フォローアップMTG</strong>（使い方の相談、活用提案）<br>
+        ・<strong>活用事例・実装手順コンテンツの定期配信</strong><br>
+        ・<strong>チーム管理の自動化</strong>（アカウント統合、費用管理）<br><br>
+        これらを自前で構築・運用するコストと比べれば、<span class="key">月5万円は「激安」</span>です。エンジニアを雇えば年間600万円以上。SaaSを組み合わせても月10万円以上はかかります。
+      </div>
+    </div>
+  </div>
+
+  <div class="objection">
+    <div class="objection-q">
+      <div class="objection-icon">🔥</div>
+      <div>
+        <div class="objection-text">「うちの社員はITリテラシーが低い。AI入れても使わないよ。」</div>
+        <div class="objection-sub">ChatGPTを入れたけど誰も使わなかった。参謀AIも同じ結果になるのでは。</div>
+      </div>
+    </div>
+    <div class="objection-a">
+      <div class="objection-a-label">SANBO AIの回答</div>
+      <div class="objection-a-text">
+        <strong>まさにそれが、SANBO AIが解決する問題そのものです。</strong><br><br>
+        ChatGPTを入れて使われなかった原因は「ツールを渡して終わり」だからです。SANBO AIは：<br>
+        ・<span class="key">管理者ダッシュボードで「誰が使っていないか」「誰がつまずいているか」がリアルタイムで分かる</span><br>
+        ・使っていない社員にはフォローアップを打てる<br>
+        ・つまずいている社員には具体的な活用事例と手順書を配信<br>
+        ・フォローアップMTGで定着を支援<br><br>
+        <strong>「使いこなせない」を前提に設計されている</strong>のが、ChatGPTとの根本的な違いです。AI導入企業の最大課題「使いこなせない（40.1%）」に対して、唯一正面から解決策を持っているのがSANBO AIです。
+      </div>
+    </div>
+  </div>
+
+  <div class="objection">
+    <div class="objection-q">
+      <div class="objection-icon">🔥</div>
+      <div>
+        <div class="objection-text">「半年後にはChatGPTやClaudeが同じ機能を出すでしょ。先行者利益なんてないのでは？」</div>
+        <div class="objection-sub">大手の進化速度を考えると、差別化はすぐ消える。</div>
+      </div>
+    </div>
+    <div class="objection-a">
+      <div class="objection-a-label">SANBO AIの回答</div>
+      <div class="objection-a-text">
+        大手が「できない」のではなく、<strong>「やらない」領域</strong>があります。<br><br>
+        <span class="key">「誰が何を聞いて、どこでつまずいているか」の可視化</span>は、OpenAIもAnthropicも<strong>プライバシーポリシーで明確に禁止</strong>しています。ChatGPT Enterpriseでも、管理者は個別の質問内容を閲覧できません。これは規模の大きいグローバル企業のプライバシー基準では実装できない機能です。<br><br>
+        SANBO AIは<strong>中小企業向けに、社員の同意ベースで</strong>この可視化を実現しています。大手が参入しにくい構造的な理由があるからこそ、この差別化は持続します。<br><br>
+        加えて、<span class="key">「同一コンテクストで複数のAI社員を同時稼働させる」</span>設計は、大手AIツールが1ユーザー1チャットを前提としている以上、アーキテクチャレベルで異なります。これは機能追加では埋まらない、設計思想の差です。
+      </div>
+    </div>
   </div>
 
   <!-- 確認事項 -->
