@@ -141,6 +141,30 @@
   .upsell-arrow { color: #ccc; font-size: 18px; flex-shrink: 0; }
   .upsell-note { font-size: 12px; color: #888; margin-top: 12px; font-style: italic; }
 
+  /* 違いセクション */
+  .diff-hero { background: #1a1a1a; color: #fff; border-radius: 12px; padding: 32px; margin-bottom: 40px; }
+  .diff-hero-title { font-size: 20px; font-weight: 700; margin-bottom: 6px; }
+  .diff-hero-sub { font-size: 14px; color: #aaa; margin-bottom: 24px; }
+  .diff-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .diff-col { padding: 0; }
+  .diff-col-header { font-size: 13px; font-weight: 700; padding: 10px 16px; border-radius: 6px 6px 0 0; text-align: center; }
+  .diff-col-header.old { background: #333; color: #999; }
+  .diff-col-header.new { background: #e65100; color: #fff; }
+  .diff-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0; font-size: 13px; border-bottom: 1px solid #333; }
+  .diff-row:last-child { border-bottom: none; }
+  .diff-cell { padding: 12px 16px; }
+  .diff-cell.label { color: #aaa; font-size: 12px; padding-top: 16px; grid-column: 1 / -1; border-bottom: none; }
+  .diff-cell.old { color: #888; }
+  .diff-cell.new { color: #fff; font-weight: 600; }
+  .diff-cell.new .highlight { color: #ffab40; }
+  .diff-demo { background: #111; border-radius: 8px; padding: 16px; margin-top: 20px; font-family: "SF Mono", "Menlo", monospace; font-size: 12px; }
+  .diff-demo-label { color: #888; margin-bottom: 8px; }
+  .diff-demo-user { color: #42a5f5; }
+  .diff-demo-ai { color: #66bb6a; }
+  .diff-demo-action { color: #ffab40; font-style: italic; }
+  .diff-demo-line { margin-bottom: 6px; }
+  .diff-versus { text-align: center; padding: 16px 0; color: #666; font-size: 13px; }
+
   /* ペルソナ */
   .persona-card { background: #fff; border-radius: 12px; padding: 28px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
   .persona-header { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
@@ -184,6 +208,79 @@
   <h1>SANBO AI</h1>
   <p class="subtitle">あなたの会社に、3人のAI社員を派遣します。｜壁打ち資料 v5｜2026.04.08</p>
 
+  <!-- ChatGPTとの違い -->
+  <div class="diff-hero">
+    <div class="diff-hero-title">「ChatGPTで良くない？」に対する答え</div>
+    <div class="diff-hero-sub">ChatGPTやClaudeのデスクトップアプリは「賢い他人」。SANBO AIは「御社を知っている社員」。</div>
+
+    <div class="diff-row" style="border-bottom:1px solid #444;">
+      <div class="diff-cell old" style="text-align:center; font-weight:700;">ChatGPT / Claude</div>
+      <div class="diff-cell new" style="text-align:center; font-weight:700;">SANBO AI</div>
+    </div>
+
+    <div class="diff-row">
+      <div class="diff-cell label">御社のデータにアクセスできるか</div>
+    </div>
+    <div class="diff-row">
+      <div class="diff-cell old">できない。毎回コピペで貼り付ける</div>
+      <div class="diff-cell new"><span class="highlight">Google Drive・Slack・社内DBに常時接続。</span>聞けば、御社のファイルから即座に引っ張ってくる</div>
+    </div>
+
+    <div class="diff-row">
+      <div class="diff-cell label">御社のことを知っているか</div>
+    </div>
+    <div class="diff-row">
+      <div class="diff-cell old">知らない。毎回「うちは食品加工業で…」と説明し直す</div>
+      <div class="diff-cell new"><span class="highlight">事業戦略・組織構造・過去の意思決定を全部知っている。</span>入社2年目の社員のように文脈を踏まえて動く</div>
+    </div>
+
+    <div class="diff-row">
+      <div class="diff-cell label">実際に仕事をするか</div>
+    </div>
+    <div class="diff-row">
+      <div class="diff-cell old">テキストで「こうしたらいいですよ」と回答するだけ。実行は自分でやる</div>
+      <div class="diff-cell new"><span class="highlight">ファイルを作る。Driveに保存する。データを分析してレポートにする。</span>「やっておきました」まで行く</div>
+    </div>
+
+    <div class="diff-row">
+      <div class="diff-cell label">提案してくれるか</div>
+    </div>
+    <div class="diff-row">
+      <div class="diff-cell old">聞かないと答えない。何を聞けばいいか分からないと、何も起きない</div>
+      <div class="diff-cell new"><span class="highlight">「今月はこれをやるべきです」とAIから提案してくる。</span>待っていれば仕事が動き出す</div>
+    </div>
+
+    <div class="diff-row">
+      <div class="diff-cell label">業務を自動化できるか</div>
+    </div>
+    <div class="diff-row">
+      <div class="diff-cell old">できない。毎回同じ指示を手で打つ</div>
+      <div class="diff-cell new"><span class="highlight">繰り返しの業務を「仕組み」にする。</span>一度作れば、以降は自動で回り続ける</div>
+    </div>
+
+    <!-- デモ：同じ指示でもこう違う -->
+    <div class="diff-versus">同じ「売上レポート作って」でも、こう違います</div>
+
+    <div class="diff-demo" style="margin-bottom:12px;">
+      <div class="diff-demo-label">ChatGPT の場合</div>
+      <div class="diff-demo-line"><span class="diff-demo-user">あなた：</span>先月の売上データを分析してレポートを作ってください</div>
+      <div class="diff-demo-line"><span class="diff-demo-ai">ChatGPT：</span>売上データを貼り付けてください。</div>
+      <div class="diff-demo-line"><span class="diff-demo-user">あなた：</span>（Excelを開いて、コピーして、貼り付けて…）</div>
+      <div class="diff-demo-line"><span class="diff-demo-ai">ChatGPT：</span>以下のようなレポートが考えられます。（テキストが出力される）</div>
+      <div class="diff-demo-line"><span class="diff-demo-action">→ テキストをコピーして、自分でWordに貼って、体裁を整えて…</span></div>
+    </div>
+    <div class="diff-demo">
+      <div class="diff-demo-label">SANBO AI の場合</div>
+      <div class="diff-demo-line"><span class="diff-demo-user">あなた：</span>先月の売上レポート作って</div>
+      <div class="diff-demo-line"><span class="diff-demo-ai">SANBO AI：</span>Google Driveの売上管理シートから4月のデータを取得しました。</div>
+      <div class="diff-demo-line"><span class="diff-demo-ai">SANBO AI：</span>前月比+12%。特にA製品が好調で、要因は3月のキャンペーン施策です。</div>
+      <div class="diff-demo-line"><span class="diff-demo-ai">SANBO AI：</span>レポートをPDFで作成し、「経営会議」フォルダに保存しました。</div>
+      <div class="diff-demo-line"><span class="diff-demo-action">→ あなたがやることは、最初の一言だけ。</span></div>
+    </div>
+
+    <p style="text-align:center; margin-top:20px; font-size:14px; font-weight:600; color:#ffab40;">ChatGPTは「賢い検索エンジン」。SANBO AIは「御社で働く社員」。</p>
+  </div>
+
   <!-- 確認事項 -->
   <div class="check-section">
     <h2>社長仲間への確認事項</h2>
@@ -209,7 +306,7 @@
 
   <!-- 入口：3つの領域カード -->
   <h2>あなたの課題はどれですか？</h2>
-  <p class="section-lead">SANBO AIは「何でもできるAI」ではありません。あなたの会社の課題に合わせて、専門のAI社員を派遣します。</p>
+  <p class="section-lead">SANBO AIは「何でもできるAIチャット」ではありません。御社のDrive・Slackに接続し、御社のデータで動く専門AI社員を派遣します。</p>
 
   <div class="entry-grid">
     <div class="entry-card recruit">
@@ -326,7 +423,7 @@
         <li>社長＋部長の複数名で利用OK</li>
         <li>初月半額の4万円でスタート</li>
       </ul>
-      <div class="plan-bonus">月8万円で「AI社員＋毎月1つの業務自動化」が手に入る</div>
+      <div class="plan-bonus">ChatGPTにできないこと：御社のデータに接続＋仕組みを作る＋毎月1つ自動化</div>
     </div>
 
     <div class="plan-card premium">
