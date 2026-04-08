@@ -71,8 +71,9 @@
   .phase-metric-value { font-size: 20px; font-weight: 700; color: #6a1b9a; }
   .phase-metric-sub { font-size: 11px; color: #aaa; }
 
-  /* プランカード（2つ） */
+  /* プランカード */
   .plan-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 16px; }
+  .plan-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px; }
   .plan-card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); display: flex; flex-direction: column; }
   .plan-card.recommended { border: 2px solid #1565c0; position: relative; }
   .plan-card.recommended::after { content: "人気"; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #1565c0; color: #fff; font-size: 11px; font-weight: 700; padding: 2px 16px; border-radius: 10px; }
@@ -206,7 +207,7 @@
 <div class="container">
 
   <h1>SANBO AI</h1>
-  <p class="subtitle">あなたの会社に、3人のAI社員を派遣します。｜壁打ち資料 v5｜2026.04.08</p>
+  <p class="subtitle">あなたの会社に、3人のAI社員を派遣します。｜壁打ち資料 v6｜2026.04.08</p>
 
   <!-- ChatGPTとの違い -->
   <div class="diff-hero">
@@ -387,6 +388,97 @@
     <p style="font-size:12px; color:#888; margin-top:12px; text-align:center;">※ AIが日常のやり取りを読み取り、フェーズの進捗を自動で更新します</p>
   </div>
 
+  <!-- カスタマージャーニー全体像 -->
+  <h2>カスタマージャーニー：LP訪問から有料契約まで</h2>
+  <p class="section-lead">「まず触らせる → 深く使わせる → 自然に課金する」の3段階で、ユーザーを大量に獲得し、SANBO AIの価値を体感してもらう設計です。</p>
+
+  <!-- ファネル図 -->
+  <div style="background:#fff; border-radius:12px; padding:24px; box-shadow:0 1px 4px rgba(0,0,0,0.08); margin-bottom:24px;">
+
+    <!-- Step 0 -->
+    <div style="display:flex; gap:16px; margin-bottom:16px; align-items:stretch;">
+      <div style="background:#e8f5e9; border-radius:10px; padding:16px 20px; flex:1; border-left:4px solid #43a047;">
+        <div style="font-size:11px; font-weight:700; color:#2e7d32; margin-bottom:4px;">STEP 0 — 登録不要</div>
+        <div style="font-size:16px; font-weight:700; margin-bottom:4px;">サンプル出力（3〜4回まで無料）</div>
+        <div style="font-size:13px; color:#555;">LPやサービスサイトから、登録なしで即体験。AI社員がどんな回答を返すかを実際に見てもらう。API原価は約100円。獲得コストとしては極めて安い。</div>
+        <div style="font-size:12px; color:#888; margin-top:8px;">目的：「これ便利だな」の最初の体験を作る</div>
+      </div>
+    </div>
+
+    <div style="text-align:center; color:#ccc; font-size:20px; margin-bottom:8px;">▼</div>
+
+    <!-- Step 1 -->
+    <div style="display:flex; gap:16px; margin-bottom:16px; align-items:stretch;">
+      <div style="background:#e3f2fd; border-radius:10px; padding:16px 20px; flex:1; border-left:4px solid #1565c0;">
+        <div style="font-size:11px; font-weight:700; color:#1565c0; margin-bottom:4px;">STEP 1 — リード獲得</div>
+        <div style="font-size:16px; font-weight:700; margin-bottom:4px;">1万円分のトークンをプレゼント</div>
+        <div style="font-size:13px; color:#555;">
+          <strong>入力してもらう情報：</strong>会社名、担当者名、電話番号、メールアドレス<br>
+          <strong>得られるもの：</strong>1万円分のトークンで、AI社員を本格的に試せる<br>
+          <strong>ここで体感させること：</strong>共有コンテクスト（会社の情報を知った上でのAI回答）、つまずきの可視化（管理者画面のプレビュー）
+        </div>
+        <div style="font-size:12px; color:#888; margin-top:8px;">目的：リード情報を取得しつつ、SANBO AIの本質的な価値を深く体験させる</div>
+      </div>
+    </div>
+
+    <div style="text-align:center; color:#ccc; font-size:20px; margin-bottom:8px;">▼</div>
+
+    <!-- Step 2 -->
+    <div style="display:flex; gap:16px; margin-bottom:16px; align-items:stretch;">
+      <div style="background:#fff3e0; border-radius:10px; padding:16px 20px; flex:1; border-left:4px solid #e65100;">
+        <div style="font-size:11px; font-weight:700; color:#e65100; margin-bottom:4px;">STEP 2 — 有料転換</div>
+        <div style="font-size:16px; font-weight:700; margin-bottom:4px;">有料プラン契約（月額5万円〜）</div>
+        <div style="font-size:13px; color:#555;">
+          1万円分を使い切った / 価値を感じた企業が有料プランへ移行。<br>
+          チーム人数に応じたプランを選択肢から選んでもらう。<br>
+          <strong>商談時の特典：</strong>「今すぐ契約で27%割引」＋5万円プランで何ができるかを具体的に提示。
+        </div>
+        <div style="font-size:12px; color:#888; margin-top:8px;">目的：「このまま使い続けたい」の自然な流れで課金へ</div>
+      </div>
+    </div>
+
+    <div style="text-align:center; color:#ccc; font-size:20px; margin-bottom:8px;">▼</div>
+
+    <!-- Step 3 -->
+    <div style="display:flex; gap:16px; align-items:stretch;">
+      <div style="background:#f3e5f5; border-radius:10px; padding:16px 20px; flex:1; border-left:4px solid #6a1b9a;">
+        <div style="font-size:11px; font-weight:700; color:#6a1b9a; margin-bottom:4px;">STEP 3 — アップセル</div>
+        <div style="font-size:16px; font-weight:700; margin-bottom:4px;">上限到達 → レポート付きアップグレード提案</div>
+        <div style="font-size:13px; color:#555;">
+          利用上限に到達したタイミングで、<strong>勝手にプランを切り替えない</strong>。<br>
+          代わりに「アップグレードしますか？」のYes/Noを提示し、以下をセットで提案：<br>
+          <strong>1.</strong> 実績レポート（「これだけ削減できました」の定量データ）<br>
+          <strong>2.</strong> 他社事例メール（「次のフェーズにいる企業はこんなこともやっています」）
+        </div>
+        <div style="font-size:12px; color:#888; margin-top:8px;">目的：成果を見せた上で、納得感のあるアップセル</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- チーム・アカウント管理の自動化 -->
+  <h3>チーム・アカウント管理の自動化</h3>
+  <div style="background:#fff; border-radius:12px; padding:24px; box-shadow:0 1px 4px rgba(0,0,0,0.08); margin-bottom:24px;">
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px;">
+      <div style="background:#f9f9f9; border-radius:8px; padding:16px; text-align:center;">
+        <div style="font-size:28px; margin-bottom:8px;">1️⃣</div>
+        <div style="font-size:13px; font-weight:700; margin-bottom:4px;">自動チーム生成</div>
+        <div style="font-size:12px; color:#666;">会社アカウントで最初の1人がログインした時点で、専用チームを自動生成</div>
+      </div>
+      <div style="background:#f9f9f9; border-radius:8px; padding:16px; text-align:center;">
+        <div style="font-size:28px; margin-bottom:8px;">2️⃣</div>
+        <div style="font-size:13px; font-weight:700; margin-bottom:4px;">自動統合</div>
+        <div style="font-size:12px; color:#666;">同じ会社の後続ユーザーは、自動的にそのチームに合流。バラバラのアカウントにならない</div>
+      </div>
+      <div style="background:#f9f9f9; border-radius:8px; padding:16px; text-align:center;">
+        <div style="font-size:28px; margin-bottom:8px;">3️⃣</div>
+        <div style="font-size:13px; font-weight:700; margin-bottom:4px;">管理外の膨張防止</div>
+        <div style="font-size:12px; color:#666;">社員が勝手に個人アカウントを作って費用が膨らむのを防止</div>
+      </div>
+    </div>
+    <p style="font-size:12px; color:#888; margin-top:12px; text-align:center;">チーム人数は選択肢から選ぶ形式。任意の上限設定はオペレーションが煩雑になるため不採用。</p>
+  </div>
+
   <!-- 価格構造 -->
   <h2>料金プラン</h2>
 
@@ -400,29 +492,58 @@
     </tr>
   </table>
 
-  <!-- 無料トライアル -->
-  <div class="trial-banner">
-    <div class="trial-banner-title">まずは2週間、無料でお試しください</div>
-    <div class="trial-banner-desc">セットアップ費10万円のみ。最初の2週間は利用料無料で、AI社員を好きなだけ使えます。<br>合わなければ、そこでやめてOK。続ける場合は、以下のプランを選択してください。</div>
+  <!-- 無料〜有料の導線 -->
+  <h3>無料体験から有料プランへ</h3>
+  <div style="background:#fff; border-radius:12px; padding:24px; box-shadow:0 1px 4px rgba(0,0,0,0.08); margin-bottom:24px;">
+    <table style="margin-bottom:0;">
+      <tr><th>ステップ</th><th>条件</th><th>利用量</th><th>費用</th></tr>
+      <tr>
+        <td><strong>サンプル体験</strong></td>
+        <td>登録不要</td>
+        <td>3〜4出力まで</td>
+        <td class="price">0円</td>
+      </tr>
+      <tr>
+        <td><strong>無料トライアル</strong></td>
+        <td>会社名・担当者名・電話・メール入力</td>
+        <td>1万円分のトークン</td>
+        <td class="price">0円</td>
+      </tr>
+    </table>
   </div>
 
-  <!-- 2プラン -->
-  <h3>2つのプラン</h3>
-  <div class="plan-grid-2">
+  <!-- 3プラン -->
+  <h3>有料プラン（3つから選択）</h3>
+  <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:16px;">
+
+    <div class="plan-card" style="border:2px solid #43a047; position:relative;">
+      <div style="position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:#43a047; color:#fff; font-size:11px; font-weight:700; padding:2px 16px; border-radius:10px;">始めやすい</div>
+      <div class="plan-name">スタータープラン</div>
+      <div class="plan-target">まずは少人数で試したい会社に</div>
+      <div class="plan-price">5万円<span class="plan-price-unit"> /月（税別）</span></div>
+      <div class="plan-price-sub">トークン上限あり（API原価25,000円分）</div>
+      <ul class="plan-features">
+        <li>複数名ログインOK（100人でも可）</li>
+        <li>全員で同じコンテクストを共有</li>
+        <li>管理者ダッシュボード付き</li>
+        <li>上限到達時はアップグレード提案</li>
+      </ul>
+      <div class="plan-bonus">人数は自由。ただしトークンは共有なので、大人数だと上限が早く来る</div>
+    </div>
 
     <div class="plan-card recommended">
       <div class="plan-name">定額パック</div>
-      <div class="plan-target">自分たちで使いこなしたい会社に</div>
+      <div class="plan-target">本格的に使いこなしたい会社に</div>
       <div class="plan-price">8万円<span class="plan-price-unit"> /月（税別）</span></div>
       <div class="plan-price-sub">AI利用無制限＋業務AI化 月1件込み</div>
       <ul class="plan-features">
         <li>AI社員へのメッセージ送信は無制限</li>
         <li>何回使っても月8万円を超えない</li>
-        <li>業務AI化（小）を毎月1件、追加費用なしで実施</li>
+        <li>業務AI化（小）を毎月1件込み</li>
         <li>社長＋部長の複数名で利用OK</li>
         <li>初月半額の4万円でスタート</li>
       </ul>
-      <div class="plan-bonus">ChatGPTにできないこと：全員で同じ文脈を共有＋誰がどこで詰まっているか可視化</div>
+      <div class="plan-bonus">全員で同じ文脈を共有＋誰がどこで詰まっているか可視化＋毎月1つ自動化</div>
     </div>
 
     <div class="plan-card premium">
@@ -442,6 +563,15 @@
     </div>
 
   </div>
+
+  <!-- 収益構造 -->
+  <h3 style="margin-top:32px;">収益構造（社内用）</h3>
+  <table>
+    <tr><th>プラン</th><th>月額</th><th>API原価目安</th><th>粗利率</th></tr>
+    <tr><td>スターター</td><td>5万円</td><td>〜25,000円</td><td class="price">50%</td></tr>
+    <tr><td>定額パック</td><td>8万円</td><td>〜25,000円</td><td class="price">69%</td></tr>
+    <tr><td>おまかせ</td><td>30万円</td><td>〜25,000円 + 人件費</td><td class="price">高（伴走費込み）</td></tr>
+  </table>
 
   <!-- 業務AI化の外注 -->
   <h3>業務AI化の外注（追加オプション）</h3>
@@ -557,6 +687,8 @@
 
   <!-- 自然なアップセル導線 -->
   <h2>導入後の自然な流れ</h2>
+
+  <h3>業務レベルのアップセル</h3>
   <div class="upsell-flow">
     <div class="upsell-steps">
       <div class="upsell-step active">
@@ -580,6 +712,69 @@
       </div>
     </div>
     <div class="upsell-note">Excelで始めたことが、いつの間にかExcelでは足りなくなる。そのタイミングで業務AI化の外注（中・大）が自然に必要になります。</div>
+  </div>
+
+  <!-- プランアップグレードの設計 -->
+  <h3>プラン上限到達時のアップグレード提案</h3>
+  <div style="background:#fff; border-radius:12px; padding:24px; box-shadow:0 1px 4px rgba(0,0,0,0.08); margin-top:16px;">
+
+    <div style="background:#ffebee; border-radius:8px; padding:16px; margin-bottom:16px; border-left:4px solid #e53935;">
+      <p style="font-size:13px; font-weight:700; color:#c62828; margin-bottom:4px;">絶対にやらないこと</p>
+      <p style="font-size:13px; color:#555;">プランの限界に達しても、勝手にプランを切り替えない。印象が悪すぎる。</p>
+    </div>
+
+    <p style="font-size:14px; font-weight:700; margin-bottom:12px;">上限到達時に提示するもの（3点セット）</p>
+
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:12px;">
+      <div style="background:#e3f2fd; border-radius:8px; padding:16px;">
+        <div style="font-size:13px; font-weight:700; color:#1565c0; margin-bottom:8px;">1. Yes/No の選択肢</div>
+        <div style="font-size:12px; color:#555;">「アップグレードしますか？」<br>「今のプランのまま来月を待ちますか？」<br>の2択をシンプルに提示</div>
+      </div>
+      <div style="background:#e8f5e9; border-radius:8px; padding:16px;">
+        <div style="font-size:13px; font-weight:700; color:#2e7d32; margin-bottom:8px;">2. 実績レポート</div>
+        <div style="font-size:12px; color:#555;">「先月、AI社員によって削減できた時間: 推定32時間」<br>「作成した資料: 47件」<br>など成果を定量化して添付</div>
+      </div>
+      <div style="background:#f3e5f5; border-radius:8px; padding:16px;">
+        <div style="font-size:13px; font-weight:700; color:#6a1b9a; margin-bottom:8px;">3. 他社事例メール（別送）</div>
+        <div style="font-size:12px; color:#555;">「あなたの次のフェーズにいる企業は、こんなこともやっています」<br>成功事例をじっくり読んでもらえるタイミングで配信</div>
+      </div>
+    </div>
+
+    <div style="background:#fff8e1; border-radius:8px; padding:12px 16px; margin-top:16px;">
+      <p style="font-size:12px; color:#f57f17; font-weight:600; text-align:center;">「自分たちもこうなりたい」→ 自然にアップグレードの意思決定へ</p>
+    </div>
+  </div>
+
+  <!-- プランアップグレードのパス -->
+  <h3>プランの昇格パス</h3>
+  <div class="upsell-flow">
+    <div class="upsell-steps">
+      <div class="upsell-step" style="background:#e8f5e9; border:1px solid #43a047;">
+        <div class="upsell-step-label">無料</div>
+        <div class="upsell-step-title">サンプル3出力</div>
+      </div>
+      <div class="upsell-arrow">→</div>
+      <div class="upsell-step" style="background:#e3f2fd; border:1px solid #1565c0;">
+        <div class="upsell-step-label">リード獲得</div>
+        <div class="upsell-step-title">1万円分プレゼント</div>
+      </div>
+      <div class="upsell-arrow">→</div>
+      <div class="upsell-step" style="background:#fff3e0; border:1px solid #e65100;">
+        <div class="upsell-step-label">月5万円</div>
+        <div class="upsell-step-title">スターター</div>
+      </div>
+      <div class="upsell-arrow">→</div>
+      <div class="upsell-step active">
+        <div class="upsell-step-label">月8万円</div>
+        <div class="upsell-step-title">定額パック</div>
+      </div>
+      <div class="upsell-arrow">→</div>
+      <div class="upsell-step" style="background:#f3e5f5; border:1px solid #6a1b9a;">
+        <div class="upsell-step-label">月30万円</div>
+        <div class="upsell-step-title">おまかせ</div>
+      </div>
+    </div>
+    <div class="upsell-note">各ステップで「成果を見せてから提案する」が鉄則。押し売りはしない。</div>
   </div>
 
   <!-- ペルソナ別フィードバック -->
@@ -707,7 +902,7 @@
   </div>
 
   <div class="footer">
-    SANBO AI — 株式会社VAIZO｜壁打ち用資料（社外秘）v5｜2026.04.08
+    SANBO AI — 株式会社VAIZO｜壁打ち用資料（社外秘）v6｜2026.04.08
   </div>
 
 </div>
