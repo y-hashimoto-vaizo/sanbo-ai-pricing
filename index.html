@@ -411,13 +411,23 @@
     <div style="display:flex; gap:16px; margin-bottom:16px; align-items:stretch;">
       <div style="background:#e3f2fd; border-radius:10px; padding:16px 20px; flex:1; border-left:4px solid #1565c0;">
         <div style="font-size:11px; font-weight:700; color:#1565c0; margin-bottom:4px;">STEP 1 — リード獲得</div>
-        <div style="font-size:16px; font-weight:700; margin-bottom:4px;">1万円分のトークンをプレゼント</div>
+        <div style="font-size:16px; font-weight:700; margin-bottom:4px;">1万円分のトークンをプレゼント + ステップメール配信開始</div>
         <div style="font-size:13px; color:#555;">
           <strong>入力してもらう情報：</strong>会社名、担当者名、電話番号、メールアドレス<br>
           <strong>得られるもの：</strong>1万円分のトークンで、AI社員を本格的に試せる<br>
           <strong>ここで体感させること：</strong>共有コンテクスト（会社の情報を知った上でのAI回答）、つまずきの可視化（管理者画面のプレビュー）
         </div>
-        <div style="font-size:12px; color:#888; margin-top:8px;">目的：リード情報を取得しつつ、SANBO AIの本質的な価値を深く体験させる</div>
+        <div style="background:#fff; border-radius:6px; padding:12px; margin-top:12px; border:1px solid #bbdefb;">
+          <div style="font-size:12px; font-weight:700; color:#1565c0; margin-bottom:6px;">同時にステップメールを配信開始（1〜2日に1通）</div>
+          <div style="font-size:12px; color:#555; line-height:1.8;">
+            Day 1: 「まずはこれを聞いてみてください」初回活用ガイド<br>
+            Day 3: 活用事例「A社は採用業務を月20時間削減しました」<br>
+            Day 5: 実装手順書「営業リストのAI自動生成、3ステップで完了」<br>
+            Day 7: 活用事例「B社の部長がハマった使い方ベスト3」<br>
+            Day 10: 「トークン残量が少なくなっています」＋有料プランの案内
+          </div>
+        </div>
+        <div style="font-size:12px; color:#888; margin-top:8px;">目的：トークンを使い切るまでの間に、活用事例と手順書で「もっと使いたい」を育てる</div>
       </div>
     </div>
 
@@ -431,7 +441,7 @@
         <div style="font-size:13px; color:#555;">
           1万円分を使い切った / 価値を感じた企業が有料プランへ移行。<br>
           チーム人数に応じたプランを選択肢から選んでもらう。<br>
-          <strong>商談時の特典：</strong>「今すぐ契約で27%割引」＋5万円プランで何ができるかを具体的に提示。
+          <strong>商談時の特典：</strong>セットアップ初期費用10万円が無料。5万円プランで何ができるかを具体的に提示。
         </div>
         <div style="font-size:12px; color:#888; margin-top:8px;">目的：「このまま使い続けたい」の自然な流れで課金へ</div>
       </div>
@@ -513,13 +523,13 @@
   </div>
 
   <!-- 3プラン -->
-  <h3>有料プラン（3つから選択）</h3>
+  <h3>有料プラン</h3>
   <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:16px;">
 
     <div class="plan-card" style="border:2px solid #43a047; position:relative;">
       <div style="position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:#43a047; color:#fff; font-size:11px; font-weight:700; padding:2px 16px; border-radius:10px;">始めやすい</div>
       <div class="plan-name">スタータープラン</div>
-      <div class="plan-target">まずは少人数で試したい会社に</div>
+      <div class="plan-target">まずは社内で使い始めたい会社に</div>
       <div class="plan-price">5万円<span class="plan-price-unit"> /月（税別）</span></div>
       <div class="plan-price-sub">トークン上限あり（API原価25,000円分）</div>
       <ul class="plan-features">
@@ -527,23 +537,24 @@
         <li>全員で同じコンテクストを共有</li>
         <li>管理者ダッシュボード付き</li>
         <li>上限到達時はアップグレード提案</li>
+        <li>商談時特典：セットアップ費10万円が無料</li>
       </ul>
       <div class="plan-bonus">人数は自由。ただしトークンは共有なので、大人数だと上限が早く来る</div>
     </div>
 
     <div class="plan-card recommended">
-      <div class="plan-name">定額パック</div>
-      <div class="plan-target">本格的に使いこなしたい会社に</div>
-      <div class="plan-price">8万円<span class="plan-price-unit"> /月（税別）</span></div>
-      <div class="plan-price-sub">AI利用無制限＋業務AI化 月1件込み</div>
+      <div class="plan-name">スタンダードプラン</div>
+      <div class="plan-target">本格的に活用を広げたい会社に</div>
+      <div class="plan-price" style="color:#888;">○○万円<span class="plan-price-unit"> /月（税別）</span></div>
+      <div class="plan-price-sub" style="color:#e65100; font-weight:600;">※ 価格は要検討（スターターの次のフェーズ）</div>
       <ul class="plan-features">
-        <li>AI社員へのメッセージ送信は無制限</li>
-        <li>何回使っても月8万円を超えない</li>
+        <li>トークン上限の大幅引き上げ or 無制限</li>
         <li>業務AI化（小）を毎月1件込み</li>
-        <li>社長＋部長の複数名で利用OK</li>
-        <li>初月半額の4万円でスタート</li>
+        <li>全員で同じコンテクストを共有</li>
+        <li>管理者ダッシュボード付き</li>
+        <li>スターターで成果が出た企業の自然な移行先</li>
       </ul>
-      <div class="plan-bonus">全員で同じ文脈を共有＋誰がどこで詰まっているか可視化＋毎月1つ自動化</div>
+      <div class="plan-bonus">スターターの上限では足りなくなった企業が、成果を実感した上で移行するプラン</div>
     </div>
 
     <div class="plan-card premium">
@@ -569,7 +580,7 @@
   <table>
     <tr><th>プラン</th><th>月額</th><th>API原価目安</th><th>粗利率</th></tr>
     <tr><td>スターター</td><td>5万円</td><td>〜25,000円</td><td class="price">50%</td></tr>
-    <tr><td>定額パック</td><td>8万円</td><td>〜25,000円</td><td class="price">69%</td></tr>
+    <tr><td>スタンダード</td><td>要検討</td><td>要検討</td><td class="price">—</td></tr>
     <tr><td>おまかせ</td><td>30万円</td><td>〜25,000円 + 人件費</td><td class="price">高（伴走費込み）</td></tr>
   </table>
 
@@ -765,8 +776,8 @@
       </div>
       <div class="upsell-arrow">→</div>
       <div class="upsell-step active">
-        <div class="upsell-step-label">月8万円</div>
-        <div class="upsell-step-title">定額パック</div>
+        <div class="upsell-step-label">月○○万円</div>
+        <div class="upsell-step-title">スタンダード</div>
       </div>
       <div class="upsell-arrow">→</div>
       <div class="upsell-step" style="background:#f3e5f5; border:1px solid #6a1b9a;">
